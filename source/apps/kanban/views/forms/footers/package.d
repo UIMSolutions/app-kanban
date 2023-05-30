@@ -1,2 +1,2 @@
-module apps.myname.views.forms.footers;
+module apps.kanban.views.forms.footers;
 

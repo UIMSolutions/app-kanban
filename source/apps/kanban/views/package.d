@@ -1,10 +1,10 @@
-module apps.myname.views;
+module apps.kanban.views;
 
 public {
-  import apps.myname.views.components;
-  import apps.myname.views.forms;
-  import apps.myname.views.pages;
+  import apps.kanban.views.components;
+  import apps.kanban.views.forms;
+  import apps.kanban.views.pages;
 }
 
-public import apps.myname.views.error;
-public import apps.myname.views.index;
+public import apps.kanban.views.error;
+public import apps.kanban.views.index;

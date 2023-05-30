@@ -1,7 +1,7 @@
-module apps.myname.views.forms;
+module apps.kanban.views.forms;
 
 public {
-  import apps.myname.views.forms.headers;
-  import apps.myname.views.forms.bodies;
-  import apps.myname.views.forms.footers;
+  import apps.kanban.views.forms.headers;
+  import apps.kanban.views.forms.bodies;
+  import apps.kanban.views.forms.footers;
 }

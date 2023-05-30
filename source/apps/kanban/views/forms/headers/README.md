@@ -1,3 +1,3 @@
-# Package 📦 apps.myname.views.forms.headers
+# Package 📦 apps.kanban.views.forms.headers
 
 

@@ -1,6 +1,6 @@
-module apps.myname.views.index;
+module apps.kanban.views.index;
 
-import apps.myname;
+import apps.kanban;
 @safe:
 
 class DMYNAMEIndexView : DView {
@@ -11,7 +11,7 @@ class DMYNAMEIndexView : DView {
     super.toH5(options);
 
     return [
-      H5Div("APP myname -> Error")
+      H5Div("APP kanban -> Error")
     ].toH5;
   }
 }
