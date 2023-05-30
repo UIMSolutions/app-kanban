@@ -1,6 +1,6 @@
-module apps.myname.controllers.pages.index;
+module apps.kanban.controllers.pages.index;
 
-import apps.myname;
+import apps.kanban;
 @safe:
 
 class DMYNAMEIndexPageController : DAPPPageController {

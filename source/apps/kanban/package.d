@@ -1,4 +1,4 @@
-module apps.myname;
+module apps.kanban;
 
 mixin(ImportPhobos!());
 
@@ -18,18 +18,18 @@ public import uim.servers;
 public import langs.javascript;
 
 public {
-  import apps.myname.controllers;
-  import apps.myname.helpers;
-  import apps.myname.routers;
-  import apps.myname.tests;
-  import apps.myname.views;
+  import apps.kanban.controllers;
+  import apps.kanban.helpers;
+  import apps.kanban.routers;
+  import apps.kanban.tests;
+  import apps.kanban.views;
 }
 
-DApp mynameApp;
+DApp kanbanApp;
 static this() {
-  mynameApp = App
-    .name("mynameApp")
-    .rootPath("/apps/myname")
+  kanbanApp = App
+    .name("kanbanApp")
+    .rootPath("/apps/kanban")
     .addRoute(Route("", HTTPMethod.GET, MYNAMEIndexPageController))
     .addRoute(Route("/", HTTPMethod.GET, MYNAMEIndexPageController));
 }

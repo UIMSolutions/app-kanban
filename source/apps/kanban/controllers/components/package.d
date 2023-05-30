@@ -1,1 +1,1 @@
-module apps.myname.controllers.components;
+module apps.kanban.controllers.components;

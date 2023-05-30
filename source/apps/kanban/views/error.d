@@ -1,6 +1,6 @@
-module apps.myname.views.error;
+module apps.kanban.views.error;
 
-import apps.myname;
+import apps.kanban;
 @safe:
 
 class DMYNAMEErrorView : DView {

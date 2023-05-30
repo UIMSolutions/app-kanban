@@ -1,7 +1,7 @@
-module apps.myname.controllers;
+module apps.kanban.controllers;
 
 public { // Packages
-  import apps.myname.controllers.actions;
-  import apps.myname.controllers.components;
-  import apps.myname.controllers.pages;
+  import apps.kanban.controllers.actions;
+  import apps.kanban.controllers.components;
+  import apps.kanban.controllers.pages;
 }

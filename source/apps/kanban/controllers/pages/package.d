@@ -1,6 +1,6 @@
-module apps.myname.controllers.pages;
+module apps.kanban.controllers.pages;
 
 public {
-  import apps.myname.controllers.pages.error;
-  import apps.myname.controllers.pages.index;
+  import apps.kanban.controllers.pages.error;
+  import apps.kanban.controllers.pages.index;
 }

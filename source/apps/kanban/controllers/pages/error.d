@@ -1,6 +1,6 @@
-module apps.myname.controllers.pages.error;
+module apps.kanban.controllers.pages.error;
 
-import apps.myname;
+import apps.kanban;
 @safe:
 
 class DMYNAMEErrorPageController : DAPPPageController {
