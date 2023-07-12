@@ -1,0 +1,2 @@
+# Principles of Service Delivery
+This principle seeks to develop a service-oriented approach. This requires that customer needs have been understood and a network of services is in place where people organize themselves around work and ensure that the system is constantly evolving.
