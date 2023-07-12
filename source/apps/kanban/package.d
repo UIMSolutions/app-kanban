@@ -27,9 +27,11 @@ public {
 
 DApp kanbanApp;
 static this() {
-  kanbanApp = App
-    .name("kanbanApp")
-    .rootPath("/apps/kanban")
-    .addRoute(Route("", HTTPMethod.GET, MYNAMEIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, MYNAMEIndexPageController));
+  kanbanApp = App("kanbanApp", "/apps/kanban")
+      .importTranslations()
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
