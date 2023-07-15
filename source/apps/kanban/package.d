@@ -25,9 +25,9 @@ public {
   import apps.kanban.views;
 }
 
-DApp kanbanApp;
 static this() {
-  kanbanApp = App("kanbanApp", "/apps/kanban")
+  AppRegistry.register("apps.kanban",
+    App("kanbanApp", "/apps/kanban")
       .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),

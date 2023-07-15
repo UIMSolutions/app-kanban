@@ -3,14 +3,14 @@ module apps.kanban.controllers.pages.error;
 import apps.kanban;
 @safe:
 
-class DMYNAMEErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEErrorPageController"));
+class DErrorPageController : DPageController {
+  mixin(ControllerThis!("ErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEErrorView(this));
+      .view(ErrorView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEErrorPageController"));
+mixin(ControllerCalls!("ErrorPageController"));
