@@ -27,7 +27,7 @@ public {
 
 static this() {
   AppRegistry.register("apps.kanban",
-    App("kanbanApp", "/apps/kanban")
+    App("kanbanApp", "apps/kanban")
       .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),
