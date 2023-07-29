@@ -2,8 +2,10 @@ module apps.kanban;
 
 mixin(ImportPhobos!());
 
-// Dub
-public import vibe.d;
+// External
+public {
+  import vibe.d;
+}
 
 // UIM
 public import uim.core;
@@ -26,12 +28,21 @@ public {
 }
 
 static this() {
-  AppRegistry.register("apps.kanban",
-    App("kanbanApp", "apps/kanban")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  // Create app
+  auto myApp = App("kanbanApp", "apps/kanban");
+
+  // Customize app
+  with(myApp) {
+    importTranslations;
+    addControllers([
+      "kanban.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("kanban.index")),
+      Route("/", HTTPMethod.GET, controller("kanban.index"))
     );
+  }
+  
+  // Register app
+  AppRegistry.register("apps.kanban", myApp);
 }
